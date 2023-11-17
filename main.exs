@@ -22,4 +22,16 @@ def list_work do
  # IO.puts(inspect(tail))
  # IO.puts(some_list)
 end
+
+def get_sum(l) do
+ [first, second | _ ] = l
+ first + second
+end
+
+def map do
+my_map = %{:name=>"Alya", :age=>20}
+my_map.age
+Map.get(my_map, :nmae, "not found") #with error
+end
+
 end
