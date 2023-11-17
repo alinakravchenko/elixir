@@ -32,6 +32,15 @@ def map do
 my_map = %{:name=>"Alya", :age=>20}
 my_map.age
 Map.get(my_map, :nmae, "not found") #with error
+IO.puts(" #{my_map.name}  #{my_map.age}")
+new_map = Map.put(my_map, :email, "myemail@gmail.com")
+IO.puts(inspect(my_map))
+IO.puts(inspect(new_map))
+
+new_map1=Map.delete(new_map, :email)
+IO.puts(inspect(new_map1))
 end
+
+
 
 end
