@@ -41,6 +41,17 @@ new_map1=Map.delete(new_map, :email)
 IO.puts(inspect(new_map1))
 end
 
+def if_work(color) do
+if color == "blue" do
+"Yes"
+end
+end
 
+def if_short(color) do
+if color == "blue", do: "Yes" end
+
+def unless_work(color) do
+unless color == "red" do "Yes" end
+end
 
 end
