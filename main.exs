@@ -91,5 +91,43 @@ case {current_color, figure} do
 _ -> "No" end
 end
 
+def move(current_color, figure) do
+case figure do {:pawn, ^current_color} -> true
+               {:rock, ^current_color} ->true
+               _ -> false end
+end
+
+
+def cond_work(number) do
+cond do
+rem(number, 2) == 0 -> "Число кратно 2"
+rem(number, 3) == 0 -> "Число кратно 2"
+rem(number, 7) == 0 -> "Число кратно 7"
+true -> "last true" end
+end
+#cond do
+#(color == "red") and ("black") -> "color match"
+#color == 1234  -> "just error"
+#color == "green" -> "color match"
+#end
+
+def sum(n1,n2) do
+n1+n2 
+end
+def sum(n1,n2,n3) do
+n1+n2+n3
+end
+def sum (n1, st, n3, n4) do
+"Str"
+end
+
+#встроенные функции 
+#Integer.to_string(8657)
+#String.capitalize("hello")
+#String.upcase("helloe")
+#String.downcase("HELLO WORld")
+#String.contains?("Hellow", "hello")
+#String.contains?(String.downcase("Hellow WorLD", String.downcase))
+#String.split("abs defg")
 
 end
