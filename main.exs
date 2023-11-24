@@ -121,7 +121,7 @@ def sum (n1, st, n3, n4) do
 "Str"
 end
 
-#встроенные функции 
+#console functions
 #Integer.to_string(8657)
 #String.capitalize("hello")
 #String.upcase("helloe")
@@ -129,5 +129,22 @@ end
 #String.contains?("Hellow", "hello")
 #String.contains?(String.downcase("Hellow WorLD", String.downcase))
 #String.split("abs defg")
+#String.to_integer("213") +578
+#String.length("sjkfddsj")
+#String.trim(" ksk   ")
+#String.replace(sdk!dsjf  !jds)
+#String.reverse(abssba)
 
+#List.first({1,2,"3"})
+#List.last({1,2,"3"})
+#List.to_string(["abc", "3", "777"])
+
+#mymap = %{name: "myname", lastname: "mylastname"}
+#Map.put(mymap, :phone, "99999999")
+
+#m_new - имя переменной
+#m_new.Map.put_new(m, :phone, "6666")
+#m_new = Map.has_key?(m,:phone)
+#m_new = Map.values(m)
+#m_new = Map.delete(m,:phone)
 end
