@@ -111,17 +111,17 @@ end
 #color == "green" -> "color match"
 #end
 
-def sum(n1,n2) do
-n1+n2 
-end
-def sum(n1,n2,n3) do
-n1+n2+n3
-end
-def sum (n1, st, n3, n4) do
-"Str"
-end
+#def sum(n1,n2) do
+#n1+n2 
+#end
+#def sum(n1,n2,n3) do
+#n1+n2+n3
+#end
+#def sum (n1, st, n3, n4) do
+#"Str"
+#end
 
-#console functions
+                             #console functions
 #Integer.to_string(8657)
 #String.capitalize("hello")
 #String.upcase("helloe")
@@ -147,4 +147,46 @@ end
 #m_new = Map.has_key?(m,:phone)
 #m_new = Map.values(m)
 #m_new = Map.delete(m,:phone)
+
+
+def enum_work do
+#mylist = [1, 2, 3, "abcd", :alpf]
+mylist = [1, 2, 3, 4, 5, 6]
+#Enum.each(mylist, fn el -> IO.puts("#{el}") end)
+#Enum.each(mylist, fn el -> el end)
+#new_list = Enum.map(mylist, fn el -> to_string(el)end)
+#Enum.all?(mylist,fn x->rem(x, 2)==0 end)
+Enum.any?(mylist,fn x->rem(x, 2)==0 end)
+Enum.shuffle(mylist)
+Enum.random 20..40
+Enum.sum(mylist)
+ulist = Enum.uniq(mylist)
+end
+
+def kernel do
+a = 34
+is_integer(a)
+is_nil(a)
+is_list(mylist)
+end
+
+def ismap do
+is_map
+mymap = %{a: 2, b: 3}
+is_map(mymap)
+end
+
+def pipe_op do
+#func1()|> func2()|> func3()|> func4()|>
+#mymap = Map.put(%{}, :a, 1) |> Map.put(:b, 2) |> Map.put(:c, 3)
+str_to_work = "   abcd  ifg   "
+str_to_work |> String.trim() |> String.downcase() |> String.replace("igf", "world")
+end
+
+end
+
+defmodule Rec do
+def len ([]), do:0
+def len ([ -head|tail]) do
+1 + len(tail) end
 end
