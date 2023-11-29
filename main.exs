@@ -85,11 +85,11 @@ case user do {:user, _, _, :admin} -> :ok
 _                                            -> "Arror verity" end
 end
 
-def colors(current_color, figure) do
-case {current_color, figure} do
-{current_color, {color,_}} when (current_color == color) and (type == :pawn or type == :rock ) -> "Yes"
-_ -> "No" end
-end
+#def colors(current_color, figure) do
+#case {current_color, figure} do
+#{current_color, {color,_}} when (current_color == color) and (type == :pawn or type == :rock ) -> "Yes"
+#_ -> "No" end
+#end
 
 def move(current_color, figure) do
 case figure do {:pawn, ^current_color} -> true
